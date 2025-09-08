@@ -1,0 +1,106 @@
+.projects{
+    h1{
+        text-align: center;
+    }
+
+    .row{
+        @include flexbox;
+
+        .col{
+            padding: $padding-grid;
+        }
+    }
+}
+
+.landscape{
+    h1{
+        text-align: center;
+    }
+
+    .row{
+        @include flexbox;
+
+        .col{
+            padding: $padding-grid;
+
+            .photo-link{
+                position: relative;
+                text-decoration: none;
+
+                .photo-hover{
+                    @include photo-hover;
+                    margin-top: -185px;
+                    margin-bottom: 3px;
+                }
+
+                 &:hover .photo-hover{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+
+.portrait{
+    h1{
+        text-align: center;
+    }
+
+    .row{
+        @include flexbox;
+
+        .col{
+            padding: $padding-grid;
+
+            .photo-link{
+                position: relative;
+                text-decoration: none;
+
+                .photo-hover{
+                    @include photo-hover;
+                    margin-top: -435px;
+                    margin-bottom: 3px;
+                }
+
+                &:hover .photo-hover{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+/* responsive design */
+
+@include mobile-only{
+    .projects{
+        .row{
+            @include flexbox-responsive;
+
+            .col{
+                margin: $margin-grid;
+            }
+        }
+    }
+
+    .landscape{
+        .row{
+            @include flexbox-responsive;
+
+            .col{
+                margin: $margin-grid;
+            }
+        }
+    }
+
+    .portrait{
+        .row{
+            @include flexbox-responsive;
+
+            .col{
+                margin: $margin-grid;
+            }
+        }
+    }
+}

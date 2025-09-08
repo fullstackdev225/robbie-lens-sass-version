@@ -1,0 +1,70 @@
+@mixin head-foot-style{
+    border: 2px solid $color-primary;
+    background-color: $color-primary;
+}
+
+@mixin section-background{
+    border: 2px solid $color-secondary;
+    background-color: $color-secondary;
+    padding: 30px;
+}
+
+@mixin flexbox{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin button-style($color){
+    border: 2px solid $color;
+    background-color: $color;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: $color-tertiary;
+    transition: all 350ms;
+}
+
+@mixin button-hover($color){
+    border-color: darken($color, 10);
+    background-color: darken($color, 10);
+}
+
+@mixin text-layout{
+    margin-left: 300px;
+    font-size: 1.2em;
+    color: $color-tertiary;
+}
+
+@mixin photo-hover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: $color-tertiary;
+    font-size: 1.2em;
+    display: none;
+}
+
+@mixin mobile-only{
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin flexbox-responsive{
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin text-layout-responsive{
+    margin-left: 100px;
+    font-size: 1em;
+}

@@ -1,0 +1,32 @@
+.footer{
+    @include head-foot-style;
+
+    &__title{
+        margin-left: 100px;
+        color: $color-secondary;
+    }
+
+    &__social{
+        float: right;
+        margin-top: -70px;
+        margin-right: 100px;
+
+        a:hover{
+            opacity: 0.8;
+        }
+    }
+}
+
+/* responsive design */
+
+@include mobile-only{
+    .footer{
+        &__title{
+            margin-left: 10px;
+        }
+
+        &__social{
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,3 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
 
+.btn {
+  border: 2px solid rgb(16, 92, 192);
+  background-color: rgb(16, 92, 192);
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  transition: all 350ms;
+}
+.btn:hover {
+  border-color: rgb(12.0769230769, 69.4423076923, 144.9230769231);
+  background-color: rgb(12.0769230769, 69.4423076923, 144.9230769231);
+}
+
+.header {
+  border: 2px solid rgb(16, 92, 192);
+  background-color: rgb(16, 92, 192);
+}
+.header__title {
+  margin-left: 100px;
+  color: rgb(9, 29, 64);
+}
+.header .navbar {
+  float: right;
+  margin-top: -90px;
+  margin-right: 100px;
+}
+.header .navbar__nav {
+  display: flex;
+}
+.header .navbar__nav .nav__item {
+  list-style-type: none;
+}
+.header .navbar__nav .nav__item .nav__link {
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 300ms;
+}
+.header .navbar__nav .nav__item .nav__link--active {
+  color: rgb(9, 29, 64);
+}
+.header .navbar__nav .nav__item .nav__link:hover {
+  color: rgb(9, 29, 64);
+}
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+  .header__title {
+    margin-left: 10px;
+  }
+  .header .navbar {
+    margin-top: -100px;
+    margin-right: 10px;
+  }
+  .header .navbar__nav {
+    flex-direction: column;
+  }
+}
+.projects h1 {
+  text-align: center;
+}
+.projects .row {
+  display: flex;
+  justify-content: center;
+}
+.projects .row .col {
+  padding: 5px;
+}
+
+.landscape h1 {
+  text-align: center;
+}
+.landscape .row {
+  display: flex;
+  justify-content: center;
+}
+.landscape .row .col {
+  padding: 5px;
+}
+.landscape .row .col .photo-link {
+  position: relative;
+  text-decoration: none;
+}
+.landscape .row .col .photo-link .photo-hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 1.2em;
+  display: none;
+  margin-top: -185px;
+  margin-bottom: 3px;
+}
+.landscape .row .col .photo-link:hover .photo-hover {
+  display: flex;
+}
+
+.portrait h1 {
+  text-align: center;
+}
+.portrait .row {
+  display: flex;
+  justify-content: center;
+}
+.portrait .row .col {
+  padding: 5px;
+}
+.portrait .row .col .photo-link {
+  position: relative;
+  text-decoration: none;
+}
+.portrait .row .col .photo-link .photo-hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 1.2em;
+  display: none;
+  margin-top: -435px;
+  margin-bottom: 3px;
+}
+.portrait .row .col .photo-link:hover .photo-hover {
+  display: flex;
+}
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+  .projects .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects .row .col {
+    margin: 5px;
+  }
+  .landscape .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .landscape .row .col {
+    margin: 5px;
+  }
+  .portrait .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portrait .row .col {
+    margin: 5px;
+  }
+}
+.form-project {
+  border: 2px solid rgb(9, 29, 64);
+  background-color: rgb(9, 29, 64);
+  padding: 30px;
+}
+.form-project h1 {
+  text-align: center;
+  color: rgb(16, 92, 192);
+}
+.form-project .form .row {
+  display: flex;
+  justify-content: center;
+}
+.form-project .form .row .col {
+  padding: 5px;
+}
+.form-project .form .row .col .form__label {
+  color: #fff;
+}
+.form-project .form .row .col input {
+  width: 500px;
+}
+.form-project .form .row .col textarea {
+  width: 1020px;
+}
+.form-project .form .row .col .form__input {
+  outline: none;
+}
+.form-project .form .row .col .form__input:focus {
+  border: 2px solid rgb(16, 92, 192);
+}
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+  .form-project .form .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-project .form .row .col {
+    margin: 5px;
+  }
+  .form-project .form .row .col .form__input {
+    width: 300px;
+  }
+}
+.footer {
+  border: 2px solid rgb(16, 92, 192);
+  background-color: rgb(16, 92, 192);
+}
+.footer__title {
+  margin-left: 100px;
+  color: rgb(9, 29, 64);
+}
+.footer__social {
+  float: right;
+  margin-top: -70px;
+  margin-right: 100px;
+}
+.footer__social a:hover {
+  opacity: 0.8;
+}
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+  .footer__title {
+    margin-left: 10px;
+  }
+  .footer__social {
+    margin-right: 10px;
+  }
+}
+.introduce {
+  border: 2px solid rgb(9, 29, 64);
+  background-color: rgb(9, 29, 64);
+  padding: 30px;
+}
+.introduce .row {
+  display: flex;
+  justify-content: center;
+}
+.introduce .row .col {
+  padding: 5px;
+}
+.introduce .row .col h1 {
+  color: rgb(16, 92, 192);
+  font-size: 3em;
+}
+.introduce .row .col p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+  .introduce .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .introduce .row .col {
+    margin: 5px;
+  }
+  .introduce .row .col img {
+    width: 300px;
+  }
+}
+.about {
+  border: 2px solid rgb(9, 29, 64);
+  background-color: rgb(9, 29, 64);
+  padding: 30px;
+}
+.about__title {
+  text-align: center;
+  font-size: 3em;
+  color: rgb(16, 92, 192);
+}
+.about h2 {
+  color: #fff;
+  text-align: center;
+}
+.about__text {
+  margin-left: 300px;
+  font-size: 1.2em;
+  color: #fff;
+}
+.about ul {
+  margin-left: 300px;
+  font-size: 1.2em;
+  color: #fff;
+}
+.about__link {
+  text-align: center;
+}
+.about table {
+  border-collapse: collapse;
+  margin: auto;
+}
+.about table th, .about table td {
+  border: 2px solid #fff;
+  padding: 80px;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+  .about__text {
+    margin-left: 100px;
+    font-size: 1em;
+  }
+  .about ul {
+    margin-left: 100px;
+    font-size: 1em;
+  }
+  .about table th, .about table td {
+    padding: 12px;
+    font-size: 1em;
+  }
+}
+.portfolio {
+  border: 2px solid rgb(9, 29, 64);
+  background-color: rgb(9, 29, 64);
+}
+.portfolio__title {
+  color: rgb(16, 92, 192);
+  margin-left: 100px;
+  font-size: 3em;
+}
 
 /*# sourceMappingURL=main.css.map */

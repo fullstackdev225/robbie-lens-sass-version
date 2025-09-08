@@ -1,0 +1,10 @@
+.portfolio{
+    border: 2px solid $color-secondary;
+    background-color: $color-secondary;
+
+    &__title{
+        color: $color-primary;
+        margin-left: 100px;
+        font-size: $title-size;
+    }
+}

@@ -1,0 +1,60 @@
+.about{
+    @include section-background;
+
+    &__title{
+        text-align: center;
+        font-size: $title-size;
+        color: $color-primary;
+    }
+
+    h2{
+       color: $color-tertiary;
+       text-align: center;
+    }
+
+    &__text{
+       @include text-layout;
+    }
+
+    ul{
+       @include text-layout;
+    }
+
+    &__link{
+        text-align: center;
+    }
+
+    table{
+        border-collapse: collapse;
+        margin: auto;
+
+        th,td{
+            border: 2px solid $color-tertiary;
+            padding: 80px;
+            font-size: 1.3em;
+            color: $color-tertiary;
+        }
+    }
+
+}
+
+/* responsive design */
+
+@include mobile-only{
+    .about{
+         &__text{
+            @include text-layout-responsive;
+         }
+
+         ul{
+            @include text-layout-responsive;
+         }
+
+         table{
+            th,td{
+                padding: 12px;
+                font-size: 1em;
+            }
+         }
+    }
+}

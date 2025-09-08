@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Accueil - Robbie lens photographe</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <h1 class="header__title">Robbie <br> Lens</h1>
+
+            <nav class="navbar">
+                <ul class="navbar__nav">
+                    <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Accueil</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">A propos</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="introduce">
+                <div class="row">
+                    <div class="col">
+                        <h1>Robbie lens <br> photographe</h1>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+                            Consequuntur quasi accusantium quam rem atque non aspernatur! <br> Magnam unde quis delectus commodi, <br>
+                            alias iure voluptate, quam quasi soluta autem sit mollitia.
+                        </p><br>
+                        <a href="#form" class="btn">Un projet? Ecrivez-moi</a>
+                    </div>
+
+                    <div class="col">
+                        <img src="images/robbie-lens.png" alt="photo de robbie lens">
+                    </div>
+                </div>
+            </section><br><br>
+
+            <section class="projects">
+                 <h1>Mes derniers projets</h1>
+
+                 <div class="row">
+                    <div class="col">
+                        <img src="images/element-1.png" alt="">
+                    </div>
+
+                    <div class="col">
+                        <img src="images/element-2.png" alt="">
+                    </div>
+
+                    <div class="col">
+                        <img src="images/element-3.png" alt="">
+                    </div>
+                 </div>
+
+                 <div class="row">
+                    <div class="col">
+                        <img src="images/element-4.png" alt="">
+                    </div>
+
+                    <div class="col">
+                        <img src="images/element-5.png" alt="">
+                    </div>
+
+                    <div class="col">
+                        <img src="images/element-6.png" alt="">
+                    </div>
+                 </div>
+            </section><br><br>
+
+            <section class="form-project" id="form">
+                <h1>Parlons de votre projet</h1>
+
+                <form class="form">
+                    <div class="row">
+                        <div class="col">
+                            <label for="name" class="form__label">Nom</label><br>
+                            <input type="text" name="name" id="name" required class="form__input">
+                        </div>
+
+                        <div class="col">
+                            <label for="email" class="form__label">Adresse e-mail</label><br>
+                            <input type="email" name="email" id="email" required class="form__input">
+                        </div>
+                    </div><br>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="message" class="form__label">Message</label><br>
+                            <textarea name="message" id="message" required cols="30" rows="10" class="form__input"></textarea>
+                        </div>
+                    </div><br>
+
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn">Envoyer</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <h1 class="footer__title">Robbie <br> Lens</h1>
+
+            <div class="footer__social">
+                <a href="#" title="instagram"><img src="icons/instagram.png" alt="logo de instagram"></a>
+                <a href="#" title="twitter"><img src="icons/twitter.png" alt="logo de twitter"></a>
+            </div>
+        </footer>
+    </body>
+</html>

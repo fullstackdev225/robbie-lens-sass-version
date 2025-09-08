@@ -1,0 +1,58 @@
+.form-project{
+    @include section-background;
+
+    h1{
+        text-align: center;
+        color: $color-primary
+    }
+
+    .form{
+        .row{
+            @include flexbox;
+
+            .col{
+                padding: $padding-grid;
+
+                .form__label{
+                    color: $color-tertiary;
+                }
+
+                input{
+                    width: 500px;
+                }
+
+                textarea{
+                    width: 1020px;
+                }
+
+                .form__input{
+                    outline: none;
+
+                    &:focus{
+                        border: 2px solid $color-primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* responsive design */
+
+@include mobile-only{
+    .form-project{
+        .form{
+            .row{
+                @include flexbox-responsive;
+
+                .col{
+                    margin: $margin-grid;
+
+                    .form__input{
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}

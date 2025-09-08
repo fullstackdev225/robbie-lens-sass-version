@@ -1,0 +1,39 @@
+.introduce{
+    @include section-background;
+
+    .row{
+        @include flexbox;
+
+        .col{
+            padding: $padding-grid;
+
+            h1{
+                color: $color-primary;
+                font-size: $title-size;
+            }
+
+            p{
+                font-size: 1.2em;
+                color: $color-tertiary;
+            }
+        }
+    }
+}
+
+/* responsive design */
+
+@include mobile-only{
+    .introduce{
+        .row{
+            @include flexbox-responsive;
+
+            .col{
+                margin: $margin-grid;
+
+                img{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
